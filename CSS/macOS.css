@@ -7,6 +7,26 @@ body{
     overflow: hidden;
 }
 
+#menu_bar{
+    background-color: rgba(0,0,0, 0.3)
+}
+#menu{
+    margin:0;
+    padding: 0.15em 0em 0.15em 0.6em;
+
+}
+#menu > li{
+    top:0;
+    font-size: 0.85em;
+    font-weight: 600;
+    display: inline;
+    color: white;
+    margin: 0 0.4em;
+    vertical-align: baseline;
+    opacity: 100%;
+}
+
+
 #terminal{
     position: absolute;
     /*top: calc(50% - 250px);*/
@@ -30,10 +50,19 @@ body{
 .windows_button{
     height: 0.78em;
     width: 0.78em;
-    background-color: red;
+
     display: inline-block;
     border-radius: 0.40em;
+}
 
+#close{
+    background-color: #f46055;
+}
+#minimize{
+    background-color: #f6bd32;
+}
+#maximize{
+    background-color: #d8d5dc;
 }
 
 #terminal_title > p {
