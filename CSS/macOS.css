@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    background-image: url("../img/macOS_wp.jpeg");
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+#terminal{
+    position: absolute;
+    /*top: calc(50% - 250px);*/
+    top: 50px;
+    left: calc(50% - 400px);
+    height: 500px;
+    width: 800px;
+    border-radius: 0.6em;
+    overflow: hidden;
+}
+
+#terminal_title{
+    background-color: #fffdfe;
+    padding: 0.4em 0.46em;
+}
+
+#windows_buttons{
+    position: absolute;
+}
+
+.windows_button{
+    height: 0.78em;
+    width: 0.78em;
+    background-color: red;
+    display: inline-block;
+    border-radius: 0.40em;
+
+}
+
+#terminal_title > p {
+    margin : 0;
+    font-weight: 600;
+    font-size: 0.88em;
+    text-align: center;
+    color: #505050;
+}
+
+#terminal_body{
+    background-color: black;
+    opacity: 88%;
+    height: 100%;
+    color: white;
+    padding: 0 5px;
+}
+
+#terminal_body > p {
+    margin: 0;
+    font-weight: 350;
+    font-size: 0.87em;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+}
