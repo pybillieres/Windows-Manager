@@ -7,6 +7,10 @@ body{
     overflow: hidden;
 }
 
+
+
+/* TOP MENU BAR */
+
 #menu_bar{
     background-color: rgba(0,0,0, 0.3)
 }
@@ -27,9 +31,52 @@ body{
 }
 
 
+
+/* WINDOWS BUTTONS*/
+
+#windows_buttons{
+    position: absolute;
+}
+
+.windows_button{
+    height: 0.78em;
+    width: 0.78em;
+    display: inline-block;
+    border-radius: 0.40em;
+    cursor: default;
+}
+
+.close{
+    background-color: #f46055;
+}
+.minimize{
+    background-color: #f6bd32;
+}
+.maximize{
+    background-color: #d8d5dc;
+}
+
+/* RESIZE AREA*/
+
+.resize_area{
+    position : absolute;
+    bottom : 0;
+    right: 0;
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    cursor : crosshair;
+}
+
+
+/* GENERAL WINDOWS*/
+/*Placer ici les info de fenetre et de titre de fenetre*/
+
+
+/* TERMINAL WINDOWS */
+
 #terminal{
     position: absolute;
-    /*top: calc(50% - 250px);*/
     top: 50px;
     left: calc(50% - 400px);
     height: 500px;
@@ -41,29 +88,10 @@ body{
 #terminal_title{
     background-color: #fffdfe;
     padding: 0.4em 0.46em;
+    cursor: grab;
 }
 
-#windows_buttons{
-    position: absolute;
-}
 
-.windows_button{
-    height: 0.78em;
-    width: 0.78em;
-
-    display: inline-block;
-    border-radius: 0.40em;
-}
-
-#close{
-    background-color: #f46055;
-}
-#minimize{
-    background-color: #f6bd32;
-}
-#maximize{
-    background-color: #d8d5dc;
-}
 
 #terminal_title > p {
     margin : 0;
@@ -92,4 +120,54 @@ body{
     font-size: 0.87em;
     font-smooth: never;
     -webkit-font-smoothing : none;
+}
+
+
+
+/* ABOUT ME WINDOWS */
+
+#about_me{
+    position: absolute;
+    /*top: calc(50% - 250px);*/
+    top: 50px;
+    left: calc(50% - 400px);
+    height: 500px;
+    width: 800px;
+    border-radius: 0.6em;
+    overflow: hidden;
+}
+
+#about_me_title{
+    background-color: #fffdfe;
+    padding: 0.4em 0.46em;
+    cursor: grab;
+}
+
+
+
+#about_me_title > p {
+    margin : 0;
+    font-weight: 600;
+    font-size: 0.88em;
+    text-align: center;
+    color: #505050;
+    -webkit-user-select: none; 
+    -webkit-touch-callout: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+#about_me_body{
+    background-color: white;
+    opacity: 95%;
+    height: 100%;
+    color: #505050;
+    padding: 0 5px;
+}
+
+#about_me_body > p {
+    margin: 0;
+    font-weight: 350;
+    font-size: 0.87em;
 }

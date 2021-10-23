@@ -20,18 +20,36 @@
 <div id="terminal">
     <div id="terminal_title">
         <div id="windows_buttons">
-            <div class="windows_button" id="close"></div>
-            <div class="windows_button" id="minimize"></div>
-            <div class="windows_button" id="maximize"></div>
+            <div class="windows_button close" id="terminal_close"></div>
+            <div class="windows_button minimize" id="terminal_minimize"></div>
+            <div class="windows_button maximize" id="terminal_maximize"></div>
         </div>
         <p>🗂 Pierre-Yves Billières &#150; -portfolio</p>
     </div>
     <div id="terminal_body">
         <p>Last login : Wed Oct 20 13:30:31 on console</p>
+        <div class="resize_area" id="terminal_resize"></div>
     </div>
 </div>
 
+<div id="about_me">
+    <div id="about_me_title">
+        <div id="windows_buttons">
+            <div class="windows_button close" id="about_me_close"></div>
+            <div class="windows_button minimize" id="about_me_minimize"></div>
+            <div class="windows_button maximize" id="about_me_maximize"></div>
+        </div>
+        <p>🗂 About me</p>
+    </div>
+    <div id="about_me_body">
+        <p>Last login : Wed Oct 20 13:30:31 on console</p>
+        <div class="resize_area" id="about_me_resize"></div>
+    </div>
+</div>
+
+
 </body>
-<script src="drag.js"></script>
+<script src="windowsManager.js"></script>
+<script src="windows.js"></script>
 <script src="main.js"></script>
 </html>
