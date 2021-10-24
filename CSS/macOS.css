@@ -171,3 +171,51 @@ body{
     font-weight: 350;
     font-size: 0.87em;
 }
+
+/*MULTI WINDOWS TEST WINDOWS*/
+
+#test{
+    position: absolute;
+    /*top: calc(50% - 250px);*/
+    top: 50px;
+    left: calc(50% - 400px);
+    height: 500px;
+    width: 800px;
+    border-radius: 0.6em;
+    overflow: hidden;
+}
+
+#test_title{
+    background-color: #fffdfe;
+    padding: 0.4em 0.46em;
+    cursor: grab;
+}
+
+
+
+#test_title > p {
+    margin : 0;
+    font-weight: 600;
+    font-size: 0.88em;
+    text-align: center;
+    color: #505050;
+    -webkit-user-select: none; 
+    -webkit-touch-callout: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+#test_body{
+    background-color: white;
+    opacity: 95%;
+    height: 100%;
+    color: #505050;
+    padding: 0 5px;
+}
+
+#test_body > p {
+    margin: 0;
+    font-weight: 350;
+    font-size: 0.87em;
+}

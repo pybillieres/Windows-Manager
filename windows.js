@@ -1,8 +1,8 @@
 class Windows {
 
     constructor(objectId, targetId) {
-        this.objectId = objectId;//id de la zone d'action pour le drag
-        this.object; //zone d'action du drag
+        this.objectId = objectId;//id de la zone d'action pour le drag SIMPLIFIER DECLARATION CLASSE EN LE DEDUISANT DU TARGETID
+        this.object; //zone d'action du drag 
         this.targetId = targetId;//id de l'objet à déplacer
         this.target; //objet à dépacer
         this.initX; //position initial de l'objet
